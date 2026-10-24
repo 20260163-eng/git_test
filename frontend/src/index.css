@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f6f8;
+  color: #222;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #111;
+  text-decoration: none;
+}
+
+.header nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.nickname {
+  font-weight: 600;
+}
+
+.board-list {
+  list-style: none;
+  padding: 0;
+}
+
+.board-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 8px;
+  padding: 14px;
+  border-radius: 8px;
+}
+
+.inline-form {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.board-list a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+.empty {
+  color: #888;
+  padding: 16px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.form.narrow {
+  max-width: 360px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  background: #aaa;
+}
+
+.article-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.article-table th,
+.article-table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.pagination {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.meta {
+  color: #666;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.content {
+  white-space: pre-wrap;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  min-height: 120px;
+}
+
+.comments {
+  margin-top: 32px;
+}
+
+.comment {
+  list-style: none;
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.comment-meta {
+  display: flex;
+  gap: 8px;
+  color: #666;
+  font-size: 0.9rem;
+}
